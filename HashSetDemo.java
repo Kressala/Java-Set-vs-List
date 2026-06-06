@@ -1,20 +1,14 @@
 import java.util.Set;
 import java.util.HashSet;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
  public class HashSetDemo {
     public static void main(String[] args) {
 
-    List<String> finalCodersList = new ArrayList<>();
-      finalCodersList.add("Sofia");
-      finalCodersList.add("Claudio");
-      finalCodersList.add("Mario");
-      finalCodersList.add("Bea");
-      finalCodersList.add("Mario");
-      System.out.println(finalCodersList);
+    ArrayList<String> finalCodersArrayList = new ArrayList<>(Arrays.asList("Sofia", "Elisa", "Giulia", "Lina", "Sofia"));
 
-      Set<String> codersSet = new HashSet<>(finalCodersList);
+      Set<String> codersSet = new HashSet<>(finalCodersArrayList);
       System.out.println(codersSet);
     }
  }
